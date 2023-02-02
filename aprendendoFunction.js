@@ -1,6 +1,12 @@
-function soma (numero1 , numero2) {
-    return numero1 + numero2;
+const AgradecimentoTD = document.querySelector("#mensagemTD")
+const AgradecimentoAA = document.querySelector("#mensagemAA")
+const AgradecimentoCP = document.querySelector("#mensagemCP")
+
+AgradecimentoTD.addEventListener("click", mensagemCliente)
+AgradecimentoAA.addEventListener("click", mensagemCliente)
+AgradecimentoCP.addEventListener("click", mensagemCliente)
+
+function mensagemCliente(){
+    alert ('Estamos felizes por escolher os serviços Eng_Pro_|, estamos sempre diponiveis para mais esclarecimentos')
 }
-console.log(2,2);
-console.log(3+2);
 
