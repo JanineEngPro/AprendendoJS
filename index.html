@@ -22,31 +22,42 @@
 			</Section>
         </HEADER>
 		<main>
-			<div class="servico">
-				<p  class="producao" id="mensagemTD"> Tratamento de dados </p>
-				<div class="controle">
-					<button type="text" class="botton" id="subtrair">-</button>
-					<!-- type="text" = para o java textContent-->
-					<input type="text" value ="0" class="controle-contador" id="comprar">
-					<button type="text"  class="botton" id="somar">+</button>
+			<section class="carinho">
+				<div class="car">
+					<p class="titleCar">Carrinho</p>
+					<div class="car-valor">
+						<p class="estatistica-numero" data-estatistica="forca">0</p>
+					</div>
 				</div>
-			</div>
-			<div class="servico">
-				<div class="controle">
+			</section>
+			<section>
+				<div class="servico">
+					<p  class="producao" id="mensagemTD"> Tratamento de dados </p>
+					<div class="controle">
+						<button type="text" class="botton" data-controle="-">-</button>
+						<!-- type="text" = para o java textContent-->
+						<!--criar datSet para desacoplar o JS do CSS-->
+						<input type="text" value ="0"  id="comprar" data-contador>
+						<button type="text"  class="botton" data-controle="+"  >+</button>
+					</div>
+				</div>
+				<div class="servico">
 					<p  class="producao" id="mensagemAA"> Assessoria Administrativa </p>
-					<button type="text" class="botton" id="subtrair">-</button>
-					<input type="text" value ="0" class="controle-contador" id="comprar">
-					<button type="text"  class="botton" id="somar">+</button>
+					<div class="controle">
+						<button type="text" class="botton"  data-controle="-">-</button>
+						<input type="text" value ="0" class="controle-contador" id="comprar" data-contador>
+						<button type="text"  class="botton" data-controle="+" >+</button>
+					</div>
 				</div>
-			</div>
-			<div class="servico">
-				<div class="controle">
-					<p  class="producao" id="mensagemCP"> Consultoria de Produção </p>
-					<button type="text" class="botton" id="subtrair">-</button>
-					<input type="text"  value ="0"  class="controle-contador" id="comprar">
-					<button type="text"  class="botton" id="somar">+</button>
+				<div class="servico">
+					<div class="controle">
+						<p  class="producao" id="mensagemCP"> Consultoria de Produção </p>
+						<button type="text" class="botton"  data-controle="-">-</button>
+						<input type="text" value ="0"  id="comprar" data-contador>
+						<button type="text"  class="botton" data-controle="+" >+</button>
+					</div>
 				</div>
-			</div>
+			</section>
 		</main>
 
 		<script src="main.js"></script>
