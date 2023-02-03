@@ -22,39 +22,40 @@
 			</Section>
         </HEADER>
 		<main>
-			<section class="carinho">
-				<div class="car">
-					<p class="titleCar">Carrinho</p>
-					<div class="car-valor">
-						<p class="estatistica-numero" data-estatistica="forca">0</p>
-					</div>
-				</div>
-			</section>
+			
 			<section>
 				<div class="servico">
 					<p  class="producao" id="mensagemTD"> Tratamento de dados </p>
 					<div class="controle">
-						<button type="text" class="botton" data-controle="-">-</button>
+						<button type="text" class="botton" data-controle="-" data-servicos="td">-</button>
 						<!-- type="text" = para o java textContent-->
 						<!--criar datSet para desacoplar o JS do CSS-->
 						<input type="text" value ="0"  id="comprar" data-contador>
-						<button type="text"  class="botton" data-controle="+"  >+</button>
+						<button type="text"  class="botton" data-controle="+" data-servicos="td" >+</button>
 					</div>
 				</div>
 				<div class="servico">
 					<p  class="producao" id="mensagemAA"> Assessoria Administrativa </p>
 					<div class="controle">
-						<button type="text" class="botton"  data-controle="-">-</button>
+						<button type="text" class="botton"  data-controle="-" data-servicos="aa">-</button>
 						<input type="text" value ="0" class="controle-contador" id="comprar" data-contador>
-						<button type="text"  class="botton" data-controle="+" >+</button>
+						<button type="text"  class="botton" data-controle="+" data-servicos="aa">+</button>
 					</div>
 				</div>
 				<div class="servico">
 					<div class="controle">
 						<p  class="producao" id="mensagemCP"> Consultoria de Produção </p>
-						<button type="text" class="botton"  data-controle="-">-</button>
+						<button type="text" class="botton"  data-controle="-" data-servicos="cp">-</button>
 						<input type="text" value ="0"  id="comprar" data-contador>
-						<button type="text"  class="botton" data-controle="+" >+</button>
+						<button type="text"  class="botton" data-controle="+" data-servicos="cp">+</button>
+					</div>
+				</div>
+			</section>
+			<section class="carinho">
+				<div class="car">
+					<p class="titleCar">Carrinho</p>
+					<div class="car-valor">
+						<p class="estatistica-numero" data-carrinho="carrinho">0</p>
 					</div>
 				</div>
 			</section>
